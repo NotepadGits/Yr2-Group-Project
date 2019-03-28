@@ -22,31 +22,31 @@ public class Player_Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate() //fixedUpdate for phyisics realted updates
+    void Update() //fixedUpdate for phyisics realted updates
     {
         //rb.AddForce vec3  (0,0,0 * Time.deltaTime)
 
-        if (Input.GetKey("w"))
+        if (Input.GetKeyDown("w"))
         {
             rb.AddForce(0, 0,Force * Time.deltaTime);
             Debug.Log("W");
 
         }
-        else if (Input.GetKey("a"))
+        else if (Input.GetKeyDown("a"))
         {
-            rb.AddForce(0, 0, Force * Time.deltaTime);
+            rb.AddForce(-Force * Time.deltaTime, 0, 0);
             Debug.Log("a");
 
         }
-        else if (Input.GetKey("s"))
+        else if (Input.GetKeyDown("s"))
         {
-            rb.AddForce(0, 0, Force * Time.deltaTime);
+            rb.AddForce(0, 0, -Force * Time.deltaTime);
             Debug.Log("s");
 
         }
-        else if (Input.GetKey("d"))
+        else if (Input.GetKeyDown("d"))
         {
-            rb.AddForce(0, 0, Force * Time.deltaTime);
+            rb.AddForce(Force * Time.deltaTime, 0, 0);
             Debug.Log("d");
 
         }
