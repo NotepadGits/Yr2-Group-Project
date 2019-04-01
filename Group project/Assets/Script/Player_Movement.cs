@@ -26,28 +26,35 @@ public class Player_Movement : MonoBehaviour
     {
         //rb.AddForce vec3  (0,0,0 * Time.deltaTime)
 
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown("w") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(0, 0,Force * Time.deltaTime);
             Debug.Log("W");
-
+            GetComponent<Attack>().State = 0;
+            GetComponent<Attack>().MovementDirection = 1;
         }
-        else if (Input.GetKeyDown("a"))
+        else if (Input.GetKeyDown("a") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(-Force * Time.deltaTime, 0, 0);
             Debug.Log("a");
+            GetComponent<Attack>().State = 0;
+            GetComponent<Attack>().MovementDirection = 2;
 
         }
-        else if (Input.GetKeyDown("s"))
+        else if (Input.GetKeyDown("s") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(0, 0, -Force * Time.deltaTime);
             Debug.Log("s");
+            GetComponent<Attack>().State = 0;
+            GetComponent<Attack>().MovementDirection = 3;
 
         }
-        else if (Input.GetKeyDown("d"))
+        else if (Input.GetKeyDown("d") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(Force * Time.deltaTime, 0, 0);
             Debug.Log("d");
+            GetComponent<Attack>().State = 0;
+            GetComponent<Attack>().MovementDirection = 4;
 
         }
 

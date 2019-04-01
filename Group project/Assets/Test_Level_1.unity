@@ -508,9 +508,10 @@ GameObject:
   - component: {fileID: 1294761426}
   - component: {fileID: 1294761425}
   - component: {fileID: 1294761427}
+  - component: {fileID: 1294761428}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -600,7 +601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1294761426}
-  Force: 80000
+  Force: 40000
 --- !u!54 &1294761426
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -615,7 +616,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &1294761427
 MonoBehaviour:
@@ -630,6 +631,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+--- !u!114 &1294761428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294761420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c978a4468a3d6384baff60abf38a5c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementDirection: 0
+  State: 0
+  attackOrb: {fileID: 6240131851006859102, guid: 1cbaccc6b07018041b03b0cb22fc7237,
+    type: 3}
+  Player: {fileID: 1294761424}
+  Velocity: 0
 --- !u!1 &1675053432
 GameObject:
   m_ObjectHideFlags: 0
