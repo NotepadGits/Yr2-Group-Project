@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
-public class SettingsMenu : MonoBehaviour
+public class SettingsMenu : MonoBehaviour, IPointerEnterHandler
 {
     public AudioMixer audioMixer;
+
+    public AudioSource highlightedAudio;
 
     Resolution[] resolutions;
 
@@ -73,8 +76,13 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    public void RestartGame()
+    public void RestartGame(string gameReset)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(gameReset);
+    }
+
+    public void OnPointerEnter(PointerEventData ped)
+    {
+        highlightedAudio.Play();
     }
 }
