@@ -7,7 +7,7 @@ public class Scaler : MonoBehaviour
 
     //public GameObject orb;
     public Transform orbTransform;
-    public int scaleFactor;
+    public float scaleFactor;
 
     private float death = 0;
     // Start is called before the first frame update

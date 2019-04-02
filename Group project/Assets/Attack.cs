@@ -19,7 +19,7 @@ public class Attack : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Keypad1)) State = 1;
         if (Input.GetKeyDown(KeyCode.Keypad2)) State = 2;
@@ -55,13 +55,6 @@ public class Attack : MonoBehaviour
 
         }
 
-        if (State != 0)
-        {
-            if (State == 1)
-            {
-                State = 0;
-                Instantiate(attackOrb, Player.position, Player.rotation);
-            }
-        }
+       
     }
 }

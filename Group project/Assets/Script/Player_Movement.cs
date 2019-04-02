@@ -29,23 +29,20 @@ public class Player_Movement : MonoBehaviour
         if (Input.GetKeyDown("w") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(0, 0,Force * Time.deltaTime);
-            Debug.Log("W");
-            GetComponent<Attack>().State = 0;
+            Debug.Log("W"); 
             GetComponent<Attack>().MovementDirection = 1;
         }
         else if (Input.GetKeyDown("a") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(-Force * Time.deltaTime, 0, 0);
             Debug.Log("a");
-            GetComponent<Attack>().State = 0;
             GetComponent<Attack>().MovementDirection = 2;
 
         }
         else if (Input.GetKeyDown("s") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(0, 0, -Force * Time.deltaTime);
-            Debug.Log("s");
-            GetComponent<Attack>().State = 0;
+            Debug.Log("s"); 
             GetComponent<Attack>().MovementDirection = 3;
 
         }
@@ -53,12 +50,29 @@ public class Player_Movement : MonoBehaviour
         {
             rb.AddForce(Force * Time.deltaTime, 0, 0);
             Debug.Log("d");
-            GetComponent<Attack>().State = 0;
             GetComponent<Attack>().MovementDirection = 4;
 
         }
 
 
+
+        if (GetComponent<Attack>().State != 0)
+        {
+            if (Input.GetKeyDown("w") || Input.GetKeyDown("d") || Input.GetKeyDown("s") || Input.GetKeyDown("a"))
+            {
+                if (GetComponent<Attack>().State == 1)
+                {
+                    GetComponent<Attack>().State = 0;
+                    GameObject attack = Instantiate(GetComponent<Attack>().attackOrb, GetComponent<Attack>().Player.position, GetComponent<Attack>().Player.rotation);
+                    if (GetComponent<Attack>().MovementDirection == 1)attack.GetComponent<Rigidbody>().velocity = new Vector3(5, 0, 0);
+                }
+            }
+        }
+
+        if(Input.GetKeyDown("d") || Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s"))
+        {
+            GetComponent<Attack>().State = 0;
+        }
         //Debug.Log(buttonUp);
         //if (Input.GetButtonUp("w")) buttonUp = true;
     }
