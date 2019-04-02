@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7147628282708630564}
   - component: {fileID: 8020680568807849843}
   - component: {fileID: 8381492910330460983}
+  - component: {fileID: 3759323936515176499}
   m_Layer: 0
   m_Name: Attack_Orb_Collider
   m_TagString: Untagged
@@ -122,4 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbTransform: {fileID: 3964989072285487494}
-  scaleFactor: 5
+  scaleFactor: 0.3
+--- !u!114 &3759323936515176499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6240131851006859102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af96e5c8ee45a246ae79c6c023b593c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

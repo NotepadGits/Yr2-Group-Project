@@ -10,7 +10,7 @@ public class Player_Movement : MonoBehaviour
 
     //editable values
     public float Force = 1000;
-
+    public float Velocity; // velocity of the attackOrb
 
     //uneditable values
     bool buttonUp = true;
@@ -60,12 +60,16 @@ public class Player_Movement : MonoBehaviour
         {
             if (Input.GetKeyDown("w") || Input.GetKeyDown("d") || Input.GetKeyDown("s") || Input.GetKeyDown("a"))
             {
-                if (GetComponent<Attack>().State == 1)
-                {
-                    GetComponent<Attack>().State = 0;
-                    GameObject attack = Instantiate(GetComponent<Attack>().attackOrb, GetComponent<Attack>().Player.position, GetComponent<Attack>().Player.rotation);
-                    if (GetComponent<Attack>().MovementDirection == 1)attack.GetComponent<Rigidbody>().velocity = new Vector3(5, 0, 0);
-                }
+                GameObject attack = Instantiate(GetComponent<Attack>().attackOrb, GetComponent<Attack>().Player.position, GetComponent<Attack>().Player.rotation);
+                if (GetComponent<Attack>().MovementDirection == 1) attack.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, Velocity);
+                if (GetComponent<Attack>().MovementDirection == 2) attack.GetComponent<Rigidbody>().velocity = new Vector3(-Velocity, 0, 0);
+                if (GetComponent<Attack>().MovementDirection == 3) attack.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, -Velocity);
+                if (GetComponent<Attack>().MovementDirection == 4) attack.GetComponent<Rigidbody>().velocity = new Vector3(Velocity, 0, 0);
+                attack.GetComponent<Type>().State = GetComponent<Attack>().State;
+                //  attack.GetComponent<EmptyScript>().emptyfunc();
+
+
+                GetComponent<Attack>().State = 0;
             }
         }
 

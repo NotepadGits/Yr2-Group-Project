@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     public GameObject attackOrb; //The prefab for our attack hitbox
     public Transform Player;        //Where the player is
 
-    public float Velocity; // velocity of the attackOrb
+
 
     // Start is called before the first frame update
     void Start()
