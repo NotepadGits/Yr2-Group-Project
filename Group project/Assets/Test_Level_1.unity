@@ -216,7 +216,7 @@ PrefabInstance:
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
       propertyPath: offset.y
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
@@ -478,7 +478,7 @@ PrefabInstance:
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
       propertyPath: offset.y
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
@@ -602,6 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1294761426}
   Force: 40000
+  Velocity: 40
 --- !u!54 &1294761426
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -648,7 +649,6 @@ MonoBehaviour:
   attackOrb: {fileID: 6240131851006859102, guid: 1cbaccc6b07018041b03b0cb22fc7237,
     type: 3}
   Player: {fileID: 1294761424}
-  Velocity: 0
 --- !u!1 &1675053432
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +826,7 @@ PrefabInstance:
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
       propertyPath: offset.y
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e62986f92a15c48829db9878d0fa01, type: 3}
@@ -911,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
       propertyPath: offset.y
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1800118035739231743, guid: 14e62986f92a15c48829db9878d0fa01,
         type: 3}
