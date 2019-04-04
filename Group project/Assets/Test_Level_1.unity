@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -357,8 +358,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -381,14 +382,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.54718655, y: -0, z: -0, w: 0.8370107}
-  m_LocalPosition: {x: 0, y: 14.44, z: -5.76}
+  m_LocalRotation: {x: 0.5091984, y: -0, z: -0, w: 0.86064917}
+  m_LocalPosition: {x: 0, y: 13, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1454764380}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 66.348, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 61.221004, y: 0, z: 0}
 --- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6357ff3aa3865644ca991ab0ff9d95a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1294761424}
+  smoothing: 0.3
+  offset: {x: 0, y: 13, z: -6}
+--- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -397,12 +413,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6357ff3aa3865644ca991ab0ff9d95a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b0b328318f07bd448a37e4ec9433a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1294761424}
-  smoothing: 0.3
-  offset: {x: 0, y: 13, z: -6}
+  _frequency: 30
+  _translationMasterMagnitude: 1
+  _translateAxisX: 1
+  _translateAxisY: 1
+  _translateAxisZ: 1
+  _translateAxisXMultiplier: 1
+  _translateAxisYMultiplier: 1
+  _translateAxisZMultiplier: 1
+  _rotationMasterMagnitude: 15
+  _rotateAxisX: 1
+  _rotateAxisY: 1
+  _rotateAxisZ: 1
+  _rotateAxisXMultiplier: 1
+  _rotateAxisYMultiplier: 1
+  _rotateAxisZMultiplier: 1
+  _decay: 2
+  _trauma: 0
 --- !u!1001 &539002797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,7 +631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1294761426}
+  camera: {fileID: 534669902}
   Force: 40000
+  _StepShake: 0.071
   Velocity: 40
 --- !u!54 &1294761426
 Rigidbody:
@@ -649,6 +681,53 @@ MonoBehaviour:
   attackOrb: {fileID: 6240131851006859102, guid: 1cbaccc6b07018041b03b0cb22fc7237,
     type: 3}
   Player: {fileID: 1294761424}
+--- !u!1 &1454764379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454764380}
+  - component: {fileID: 1454764381}
+  m_Layer: 0
+  m_Name: Camera Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454764380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454764379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 534669905}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454764381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454764379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6357ff3aa3865644ca991ab0ff9d95a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1294761424}
+  smoothing: 0.3
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1675053432
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3759323936515176499}
   m_Layer: 0
   m_Name: Attack_Orb_Collider
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,3 +136,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af96e5c8ee45a246ae79c6c023b593c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  State: 0

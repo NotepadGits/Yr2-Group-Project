@@ -6,10 +6,12 @@ public class Player_Movement : MonoBehaviour
 {
     //references to other unity components
     public Rigidbody rb;
-
+    public GameObject camera;
 
     //editable values
     public float Force = 1000;
+    [Range(0, 1)]
+    public float _StepShake = 1f;
     public float Velocity; // velocity of the attackOrb
 
     //uneditable values
@@ -31,12 +33,15 @@ public class Player_Movement : MonoBehaviour
             rb.AddForce(0, 0,Force * Time.deltaTime);
             Debug.Log("W"); 
             GetComponent<Attack>().MovementDirection = 1;
+            camera.GetComponent<PerlinCameraScript>().Trauma = _StepShake;
+
         }
         else if (Input.GetKeyDown("a") && GetComponent<Attack>().State != 0)
         {
             rb.AddForce(-Force * Time.deltaTime, 0, 0);
             Debug.Log("a");
             GetComponent<Attack>().MovementDirection = 2;
+            camera.GetComponent<PerlinCameraScript>().Trauma = _StepShake;
 
         }
         else if (Input.GetKeyDown("s") && GetComponent<Attack>().State != 0)
@@ -44,6 +49,7 @@ public class Player_Movement : MonoBehaviour
             rb.AddForce(0, 0, -Force * Time.deltaTime);
             Debug.Log("s"); 
             GetComponent<Attack>().MovementDirection = 3;
+            camera.GetComponent<PerlinCameraScript>().Trauma = _StepShake;
 
         }
         else if (Input.GetKeyDown("d") && GetComponent<Attack>().State != 0)
@@ -51,6 +57,7 @@ public class Player_Movement : MonoBehaviour
             rb.AddForce(Force * Time.deltaTime, 0, 0);
             Debug.Log("d");
             GetComponent<Attack>().MovementDirection = 4;
+            camera.GetComponent<PerlinCameraScript>().Trauma = _StepShake;
 
         }
 
