@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8489044723729303413}
   - component: {fileID: 766206524821525713}
   - component: {fileID: 4742845879352086541}
+  - component: {fileID: 7351183017152154222}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -87,7 +88,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165383367400551603}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -104,4 +105,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ab6903ca305cc4f9e3066b13c998a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 50648727423297384, guid: 0a8bed8486ba6724abacb9467f0d6b19, type: 3}
+  player: {fileID: 0}
+  enemy: {fileID: 0}
+  moveSpeed: 5
+--- !u!114 &7351183017152154222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165383367400551603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc8a0ad755ca3a4fb0dd100d0089dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  State: 0
+  enemy: {fileID: 1165383367400551603}

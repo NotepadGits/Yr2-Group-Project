@@ -5,12 +5,12 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-	/* find and insert player position.
+    /* find and insert player position.
 	 * update enemy position to move towards the player. 
 	 */
 
-	public GameObject player;
-	public GameObject enemy;
+    public GameObject player;
+    public GameObject enemy;
 
 	public float moveSpeed = 5;
 
@@ -22,8 +22,11 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		//rotate the object to be looking at the player. (!Not sure if this is necessary).
-		transform.LookAt(target);
+        player = GameObject.FindGameObjectWithTag("Player");
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
+
+        //rotate the object to be looking at the player. (!Not sure if this is necessary).
+        transform.LookAt(target);
 
 		//set the transform of the player to current player position.
 		target = player.transform;
@@ -39,8 +42,9 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-	void OnCollisionEnter(Collision target)
+	private void OnTriggerEnter(Collider other)
 	{
-		//Destroy(this.gameObject);
+        Debug.Log("ENTER");
+		Destroy(this.gameObject);
 	}
 }

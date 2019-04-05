@@ -11,12 +11,12 @@ public class EnemySpawner : MonoBehaviour
 	public GameObject spawner_E;
 	public GameObject spawner_S;
 
+
+
 	/* Find player position in world space
 	 * decide what pole to spawn the enemy at.
 	 * Set enemy position to spawn pole position.
 	 * instantiate enemy at pole position.
-	 * 
-	 * 
 	 */
 
 		//player position.
@@ -51,31 +51,34 @@ public class EnemySpawner : MonoBehaviour
 		spawnerPosition_N = spawner_N.transform.position;
 		spawnerPosition_E = spawner_E.transform.position;
 		spawnerPosition_S = spawner_S.transform.position;
-
 	}
 
-	//method that checks where the player is in world space. Where they are depends where they spawn.
-	void EnemySpawnLocation()
-	{
-		if (playerPosX > 0)
-		{
-			Instantiate(enemy, spawnerPosition_W, Quaternion.identity);
-		}
+    //method that checks where the player is in world space. Where they are depends where they spawn.
+    void EnemySpawnLocation()
+    {
+        if (playerPosX >= 0)
+        {
+            enemy.GetComponent<EnemyGeneratorScript>().ChooseEnemyColour();
+            Instantiate(enemy, spawnerPosition_W, Quaternion.identity);
+        }
 
-		if (playerPosX < 0)
-		{
-			Instantiate(enemy, spawnerPosition_E, Quaternion.identity);
-		}
+        if (playerPosX < 0)
+        {
+            enemy.GetComponent<EnemyGeneratorScript>().ChooseEnemyColour();
+            Instantiate(enemy, spawnerPosition_E, Quaternion.identity);
+        }
 
-		if (playerPosZ < 0)
-		{
-			Instantiate(enemy, spawnerPosition_N, Quaternion.identity);
-		}
+        if (playerPosZ < 0)
+        {
+            enemy.GetComponent<EnemyGeneratorScript>().ChooseEnemyColour();
+            Instantiate(enemy, spawnerPosition_N, Quaternion.identity);
+        }
 
-		if (playerPosZ > 0)
-		{
-			Instantiate(enemy, spawnerPosition_S, Quaternion.identity);
-		}
+        if (playerPosZ > 0)
+        {
+            enemy.GetComponent<EnemyGeneratorScript>().ChooseEnemyColour();
+            Instantiate(enemy, spawnerPosition_S, Quaternion.identity);
+        }
 
-	}
+    }
 }
