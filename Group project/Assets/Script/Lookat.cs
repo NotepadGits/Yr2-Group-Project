@@ -5,12 +5,14 @@ using UnityEngine;
 public class Lookat : MonoBehaviour
 {
 
-    public GameObject self;
+    Vector3 targetPos;
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Camera.main.transform);
-        self.transform.Rotate(-65f, -180f, 0f);
+
+        targetPos = new Vector3(transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        transform.LookAt(targetPos);
+ 
     }
 }
