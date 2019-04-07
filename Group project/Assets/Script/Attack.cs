@@ -35,22 +35,40 @@ public class Attack : MonoBehaviour
                 GetComponent<Renderer>().material.color = new Color(1f, 0.5f, 0.5f, 0.5f);
                 break;
             case 1:
-                GetComponent<Renderer>().material.color = Color.cyan;
+                {
+                    GetComponent<Renderer>().material.color = Color.cyan;
+                    FindObjectOfType<Audio>().Play("WaterAttack");
+                }
                 break;
             case 2:
-                GetComponent<Renderer>().material.color = Color.green;
+                {
+                    GetComponent<Renderer>().material.color = Color.green;
+                    FindObjectOfType<Audio>().Play("EarthAttack");
+                }
                 break;
             case 3:
-                GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                {
+                    GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                    FindObjectOfType<Audio>().Play("AirAttack");
+                }
                 break;
             case 4:
-                GetComponent<Renderer>().material.color = Color.red;
+                {
+                    GetComponent<Renderer>().material.color = Color.red;
+                    FindObjectOfType<Audio>().Play("FireAttack");
+                }
                 break;
             case 5:
-                GetComponent<Renderer>().material.color = Color.yellow;
+                {
+                    GetComponent<Renderer>().material.color = Color.yellow;
+                    FindObjectOfType<Audio>().Play("ElectricAttack");
+                }
                 break;
             case 6:
-                GetComponent<Renderer>().material.color = Color.magenta;
+                {
+                    GetComponent<Renderer>().material.color = Color.magenta;
+                    FindObjectOfType<Audio>().Play("VoidAttack");
+                }
                 break;
 
         }
