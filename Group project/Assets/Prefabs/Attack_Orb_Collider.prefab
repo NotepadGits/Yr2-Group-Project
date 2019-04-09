@@ -245,6 +245,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  fire_Effect: {fileID: 1714051479141435148, guid: bb9ad5d20d410c849a1795149e1a6c90,
+    type: 3}
+  water_Effect: {fileID: 3331668394483941273, guid: fd8327c748c311e4587cf3b1d0bb9ac5,
+    type: 3}
+  void_Effect: {fileID: 8729160916356006129, guid: d37714d6f0559b143a3047110782b2b3,
+    type: 3}
+  wind_Effect: {fileID: 231963795446348315, guid: 010660d27a11807408a2ec6248bf85c4,
+    type: 3}
+  earth_Effect: {fileID: 6638363538296308760, guid: 2447d146d7cf27b4c9a79bd2afc8fae1,
+    type: 3}
 --- !u!114 &9062525822353007
 MonoBehaviour:
   m_ObjectHideFlags: 0
