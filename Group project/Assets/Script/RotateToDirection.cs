@@ -26,5 +26,6 @@ public class RotateToDirection : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         direction = transform.rotation;
 
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x + 60.0f, transform.eulerAngles.y, -transform.eulerAngles.z);
     }
 }
