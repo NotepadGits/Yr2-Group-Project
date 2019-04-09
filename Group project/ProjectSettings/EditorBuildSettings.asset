@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Jacob's Comapny.unity
+    guid: 9f03b304be4f1c34db2cd7c7bfc0b47a
+  - enabled: 1
+    path: Assets/Scenes/Spencer's Company.unity
+    guid: 94e27c9df2e0f404fb5effadb2b53a2b
+  - enabled: 1
+    path: Assets/Scenes/Lincoln.unity
+    guid: 5acb3da0fa289d44f8670650299d7ada
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 6e67b9bf82c18e6458c0fbe522326910
+  - enabled: 1
+    path: Assets/Scenes/Test_Level_1.unity
+    guid: 71c6439c075164d4d8bd6cf67a2e65ba
   m_configObjects: {}
