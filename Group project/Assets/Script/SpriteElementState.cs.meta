@@ -3,7 +3,13 @@ guid: 8468c45771579b4449bfb7044188c771
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - water: {fileID: 21300000, guid: 0f28d61537faa064aa365289c415e0a1, type: 3}
+  - earth: {fileID: 21300000, guid: 62ec0de36cd588b42935eb52a94a8737, type: 3}
+  - wind: {fileID: 21300000, guid: 3b13a5e11d9dd7e45a995e1ade421166, type: 3}
+  - fire: {fileID: 21300000, guid: 8f06a35c5a401ae429d0dcdfffa54365, type: 3}
+  - holy: {fileID: 21300000, guid: 6a470c14dfe29854e8ae7e03639d7ae5, type: 3}
+  - Void: {fileID: 21300000, guid: 6ba3ca196bd55d44ea2fcf930a03bcf4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
