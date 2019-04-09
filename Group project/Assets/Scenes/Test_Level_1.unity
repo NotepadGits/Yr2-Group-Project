@@ -3190,7 +3190,7 @@ MonoBehaviour:
   rb: {fileID: 1294761426}
   camera: {fileID: 534669902}
   Force: 40000
-  _StepShake: 0.071
+  _StepShake: 0.029
   Velocity: 40
 --- !u!54 &1294761426
 Rigidbody:

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5059001735846974836}
   - component: {fileID: 5853901994948547164}
   - component: {fileID: 204115378781430346}
+  - component: {fileID: 3690555047092139530}
   m_Layer: 0
   m_Name: Element attack Sprite
   m_TagString: Untagged
@@ -105,6 +106,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f5a1c66bc7bd304cb29d3817cc58de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3690555047092139530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814632555967887532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f45f719169b3f44d80576e2d10fcd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 21300000, guid: 2894a7bf03ad9ba4a83a6ce4fee3ea43, type: 3}
+  earth: {fileID: 21300000, guid: b6a860ff36752484991343d47a05ef8d, type: 3}
+  air: {fileID: 21300000, guid: 9fa98bc9d338b834d8a45dda036afe66, type: 3}
+  fire: {fileID: 21300000, guid: 0c252376ef971674a875eceadd8a54b9, type: 3}
+  holy: {fileID: 21300000, guid: 2f5cf54a8cff1344b8fd8e553e363204, type: 3}
+  Void: {fileID: 21300000, guid: e5f970c26eab25847bc7acae7d18c614, type: 3}
 --- !u!1 &6240131851006859102
 GameObject:
   m_ObjectHideFlags: 0
