@@ -269,91 +269,115 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: a111d9eaf3977054daaba79006f1f221, type: 3}
     volume: 0
     pitch: 0
+    loop: 0
     source: {fileID: 0}
   - name: AirAttack
     clip: {fileID: 8300000, guid: c6fa0527923387d41a4075d97709c9d1, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: AirHit
     clip: {fileID: 8300000, guid: 04bd160ce304a114f8e27c9f04bb7f83, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: Click
     clip: {fileID: 8300000, guid: f8634e06fc9bf524983774f09786750f, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: EarthAttack
     clip: {fileID: 8300000, guid: 0650414052b1b8c4384b00181713f90e, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: EarthHit
     clip: {fileID: 8300000, guid: 1496adfbb59acb2459243b90fef9e539, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: ElectricAttack
     clip: {fileID: 8300000, guid: 810ec53a37d539b4397f6828c296b754, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: ElectricHit
     clip: {fileID: 8300000, guid: 95d967e1ee270024e83451ad8df7e8bb, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: EnemyAttack
     clip: {fileID: 8300000, guid: 730d5d6f6553de7409b3260157415d57, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: EnemyDamage
     clip: {fileID: 8300000, guid: 060998c7655452443b6bb987090ba4e9, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: FireAttack
     clip: {fileID: 8300000, guid: 230b5fd6c71323a4797710e30b6aabd4, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: FireHit
     clip: {fileID: 8300000, guid: a20f05090ff76ac45bd186e489cd8e76, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: HoverSelect
     clip: {fileID: 8300000, guid: daf339dfaa5681e409d4e96f393abd4a, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: PlayerHit
     clip: {fileID: 8300000, guid: 843d69700b77a1241a76ea2d761172b4, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: VoidAttack
     clip: {fileID: 8300000, guid: a7c3803a1deac704cb225b84feeb055a, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: VoidHit
     clip: {fileID: 8300000, guid: d02b3b085c3f6f349a1ca849e37e3f46, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: WaterAttack
     clip: {fileID: 8300000, guid: d3498035f971adb4fbd213084870c880, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: WaterHit
     clip: {fileID: 8300000, guid: 8a554b427d38f4e448329360cff57949, type: 3}
     volume: 0.53
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bgm
+    clip: {fileID: 8300000, guid: 0508ca180dcc8054982538367e91dabd, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &135084820
 Transform:
