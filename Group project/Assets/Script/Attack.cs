@@ -34,6 +34,7 @@ public class Attack : MonoBehaviour
                 
                 break;
             case 1:
+<<<<<<< HEAD
                 GetComponent<Renderer>().material.color = Color.cyan;
                 FindObjectOfType<Audio>().Play("WaterAttack");
                 
@@ -59,6 +60,42 @@ public class Attack : MonoBehaviour
             case 6:
                 GetComponent<Renderer>().material.color = Color.magenta;
                 FindObjectOfType<Audio>().Play("VoidAttack");
+=======
+                {
+                    GetComponent<Renderer>().material.color = Color.cyan;
+                    FindObjectOfType<Audio>().Play("WaterAttack");
+                }
+                break;
+            case 2:
+                {
+                    GetComponent<Renderer>().material.color = Color.green;
+                    FindObjectOfType<Audio>().Play("EarthAttack");
+                }
+                break;
+            case 3:
+                {
+                    GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                    FindObjectOfType<Audio>().Play("AirAttack");
+                }
+                break;
+            case 4:
+                {
+                    GetComponent<Renderer>().material.color = Color.red;
+                    FindObjectOfType<Audio>().Play("FireAttack");
+                }
+                break;
+            case 5:
+                {
+                    GetComponent<Renderer>().material.color = Color.yellow;
+                    FindObjectOfType<Audio>().Play("ElectricAttack");
+                }
+                break;
+            case 6:
+                {
+                    GetComponent<Renderer>().material.color = Color.magenta;
+                    FindObjectOfType<Audio>().Play("VoidAttack");
+                }
+>>>>>>> origin/Harry-sfxedits
                 break;
 
         }

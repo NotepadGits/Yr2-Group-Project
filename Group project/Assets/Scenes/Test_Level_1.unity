@@ -235,6 +235,164 @@ PrefabInstance:
       objectReference: {fileID: 1294761424}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e62986f92a15c48829db9878d0fa01, type: 3}
+--- !u!1 &135084818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135084820}
+  - component: {fileID: 135084819}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &135084819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135084818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5b46d55aaf5de45ac16ed593483876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: a111d9eaf3977054daaba79006f1f221, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AirAttack
+    clip: {fileID: 8300000, guid: c6fa0527923387d41a4075d97709c9d1, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AirHit
+    clip: {fileID: 8300000, guid: 04bd160ce304a114f8e27c9f04bb7f83, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: f8634e06fc9bf524983774f09786750f, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EarthAttack
+    clip: {fileID: 8300000, guid: 0650414052b1b8c4384b00181713f90e, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EarthHit
+    clip: {fileID: 8300000, guid: 1496adfbb59acb2459243b90fef9e539, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ElectricAttack
+    clip: {fileID: 8300000, guid: 810ec53a37d539b4397f6828c296b754, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ElectricHit
+    clip: {fileID: 8300000, guid: 95d967e1ee270024e83451ad8df7e8bb, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyAttack
+    clip: {fileID: 8300000, guid: 730d5d6f6553de7409b3260157415d57, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDamage
+    clip: {fileID: 8300000, guid: 060998c7655452443b6bb987090ba4e9, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FireAttack
+    clip: {fileID: 8300000, guid: 230b5fd6c71323a4797710e30b6aabd4, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FireHit
+    clip: {fileID: 8300000, guid: a20f05090ff76ac45bd186e489cd8e76, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HoverSelect
+    clip: {fileID: 8300000, guid: daf339dfaa5681e409d4e96f393abd4a, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerHit
+    clip: {fileID: 8300000, guid: 843d69700b77a1241a76ea2d761172b4, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: VoidAttack
+    clip: {fileID: 8300000, guid: a7c3803a1deac704cb225b84feeb055a, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: VoidHit
+    clip: {fileID: 8300000, guid: d02b3b085c3f6f349a1ca849e37e3f46, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WaterAttack
+    clip: {fileID: 8300000, guid: d3498035f971adb4fbd213084870c880, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WaterHit
+    clip: {fileID: 8300000, guid: 8a554b427d38f4e448329360cff57949, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bgm
+    clip: {fileID: 8300000, guid: 0508ca180dcc8054982538367e91dabd, type: 3}
+    volume: 0.45
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+--- !u!4 &135084820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135084818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,164 +772,6 @@ PrefabInstance:
       objectReference: {fileID: 1294761424}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e62986f92a15c48829db9878d0fa01, type: 3}
---- !u!1 &888875273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 888875275}
-  - component: {fileID: 888875274}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &888875274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888875273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097aacd263384324cb4b4648a04713e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: AirAttack
-    clip: {fileID: 8300000, guid: 96367e85e2d076949996266316d273a6, type: 3}
-    volume: 0.63
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AirHit
-    clip: {fileID: 8300000, guid: cd0e92aeed7683447b442bb8988cdf21, type: 3}
-    volume: 0.64
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Bgm
-    clip: {fileID: 8300000, guid: 0508ca180dcc8054982538367e91dabd, type: 3}
-    volume: 0.36
-    pitch: 0
-    loop: 1
-    source: {fileID: 0}
-  - name: Click
-    clip: {fileID: 8300000, guid: f8634e06fc9bf524983774f09786750f, type: 3}
-    volume: 0.61
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: EarthAttack
-    clip: {fileID: 8300000, guid: 0650414052b1b8c4384b00181713f90e, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: EarthHit
-    clip: {fileID: 8300000, guid: 44b1fef9cfeeff144959a053fc06ec25, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ElectricAttack
-    clip: {fileID: 8300000, guid: 810ec53a37d539b4397f6828c296b754, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: ElectricHit
-    clip: {fileID: 8300000, guid: 26e5308c6301af544b6572693888cfe6, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyAttack
-    clip: {fileID: 8300000, guid: 404994f31faccd543a0bc6ef21160360, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: EnemyDamage
-    clip: {fileID: 8300000, guid: 060998c7655452443b6bb987090ba4e9, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: FireAttack
-    clip: {fileID: 8300000, guid: 230b5fd6c71323a4797710e30b6aabd4, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: FireHit
-    clip: {fileID: 8300000, guid: a91e232f43eeb344ca1b65ee42240b96, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Hoverselect
-    clip: {fileID: 8300000, guid: daf339dfaa5681e409d4e96f393abd4a, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: PlayerDeath
-    clip: {fileID: 8300000, guid: d876765e8790e9e489ed00a0cf35fef5, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: PlayerHit
-    clip: {fileID: 8300000, guid: 843d69700b77a1241a76ea2d761172b4, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: VoidAttack
-    clip: {fileID: 8300000, guid: 5de63aff11bef1a48af47406149d5e0f, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: VoidHit
-    clip: {fileID: 8300000, guid: c0e546d05ffb74041ac9a51d7272fed4, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: WaterAttack
-    clip: {fileID: 8300000, guid: d3498035f971adb4fbd213084870c880, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: WaterHit
-    clip: {fileID: 8300000, guid: 8a554b427d38f4e448329360cff57949, type: 3}
-    volume: 0.6
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
---- !u!4 &888875275
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888875273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1025598399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5750708199707948032, guid: 14e62986f92a15c48829db9878d0fa01,
@@ -945,18 +945,38 @@ MonoBehaviour:
   attackOrb: {fileID: 6240131851006859102, guid: 1cbaccc6b07018041b03b0cb22fc7237,
     type: 3}
   Player: {fileID: 1294761424}
+<<<<<<< HEAD:Group project/Assets/Test_Level_1.unity
+--- !u!1 &1355772049
+GameObject:
+=======
 --- !u!82 &1294761429
 AudioSource:
+>>>>>>> origin/Harry-sfxedits:Group project/Assets/Scenes/Test_Level_1.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Group project/Assets/Test_Level_1.unity
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355772050}
+  - component: {fileID: 1355772051}
+  m_Layer: 0
+  m_Name: New Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1355772050
+Transform:
+=======
   m_GameObject: {fileID: 1294761420}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d3498035f971adb4fbd213084870c880, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1051,8 +1071,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5de63aff11bef1a48af47406149d5e0f, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a7c3803a1deac704cb225b84feeb055a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1148,7 +1168,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 843d69700b77a1241a76ea2d761172b4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1235,16 +1255,29 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!82 &1294761432
 AudioSource:
+>>>>>>> origin/Harry-sfxedits:Group project/Assets/Scenes/Test_Level_1.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Group project/Assets/Test_Level_1.unity
+  m_GameObject: {fileID: 1355772049}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalScale: {x: 0.08793017, y: 0.10095754, z: 1.1913052}
+  m_Children: []
+  m_Father: {fileID: 1675053436}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &1355772051
+SpriteRenderer:
+=======
   m_GameObject: {fileID: 1294761420}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d876765e8790e9e489ed00a0cf35fef5, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a111d9eaf3977054daaba79006f1f221, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1340,7 +1373,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 230b5fd6c71323a4797710e30b6aabd4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1436,7 +1469,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 810ec53a37d539b4397f6828c296b754, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1532,7 +1565,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0650414052b1b8c4384b00181713f90e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1619,16 +1652,61 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!82 &1294761436
 AudioSource:
+>>>>>>> origin/Harry-sfxedits:Group project/Assets/Scenes/Test_Level_1.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Group project/Assets/Test_Level_1.unity
+  m_GameObject: {fileID: 1355772049}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 099347bae6231af44815bb05616a6f2f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.8, y: 3.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+=======
   m_GameObject: {fileID: 1294761420}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 96367e85e2d076949996266316d273a6, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: c6fa0527923387d41a4075d97709c9d1, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1713,85 +1791,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1355772049
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1355772050}
-  - component: {fileID: 1355772051}
-  m_Layer: 0
-  m_Name: New Sprite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1355772050
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355772049}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
-  m_LocalScale: {x: 0.08793017, y: 0.10095754, z: 1.1913052}
-  m_Children: []
-  m_Father: {fileID: 1675053436}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &1355772051
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355772049}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 099347bae6231af44815bb05616a6f2f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.8, y: 3.2}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+>>>>>>> origin/Harry-sfxedits:Group project/Assets/Scenes/Test_Level_1.unity
 --- !u!1 &1454764379
 GameObject:
   m_ObjectHideFlags: 0
