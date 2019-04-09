@@ -11,9 +11,6 @@ public class PauseScript : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pausedMenu;
 
-
-
-
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
