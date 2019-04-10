@@ -9,9 +9,19 @@ public class scenceTransitions : MonoBehaviour
 
     public string scence;
 
+    private float time = 0f;
+
+    private void Start()
+    {
+        
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        time += Time.deltaTime;
+
+        if (time > 3)
         {
             StartCoroutine(LoadScene());
         }
