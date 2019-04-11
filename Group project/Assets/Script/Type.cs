@@ -23,21 +23,33 @@ public class Type : MonoBehaviour
                 break;
             case 1:
                 GetComponent<Renderer>().material.color = Color.cyan;
+                gameObject.tag = "water";
+                FindObjectOfType<Audio>().GetComponent<Audio>().Play("WaterAttack");
                 break;
             case 2:
                 GetComponent<Renderer>().material.color = Color.green;
+                gameObject.tag = "earth";
+                FindObjectOfType<Audio>().GetComponent<Audio>().Play("EarthAttack");
                 break;
             case 3:
                 GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                gameObject.tag = "air";
+                FindObjectOfType<Audio>().GetComponent<Audio>().Play("AirAttack");
                 break;
             case 4:
                 GetComponent<Renderer>().material.color = Color.red;
+                gameObject.tag = "fire";
+                FindObjectOfType<Audio>().GetComponent<Audio>().Play("FireAttack");
                 break;
             case 5:
                 GetComponent<Renderer>().material.color = Color.yellow;
+                gameObject.tag = "electric";
+                FindObjectOfType<Audio>().GetComponent<Audio>().Play("ElectricAttack");
                 break;
             case 6:
                 GetComponent<Renderer>().material.color = Color.magenta;
+                gameObject.tag = "void";
+                FindObjectOfType<Audio>().GetComponent<Audio>().Play("VoidAttack");
                 break;
 
         }
@@ -50,6 +62,7 @@ public class Type : MonoBehaviour
         {
         	var fire_efx = Instantiate(fire_Effect, gameObject.transform.position, Quaternion.identity);
         	fire_efx.transform.parent = gameObject.transform;
+            
         }
         if(State == 1)
         {

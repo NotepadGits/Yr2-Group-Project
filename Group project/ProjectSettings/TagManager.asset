@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Attack
   - Enemy
+  - Audio
+  - water
+  - fire
+  - air
+  - earth
+  - void
+  - electric
   layers:
   - Default
   - TransparentFX

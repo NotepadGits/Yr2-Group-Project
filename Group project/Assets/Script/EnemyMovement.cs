@@ -45,6 +45,13 @@ public class EnemyMovement : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
         Debug.Log("ENTER");
-		Destroy(this.gameObject);
+        if(other.gameObject.tag == "water") FindObjectOfType<Audio>().GetComponent<Audio>().Play("WaterHit");
+        if (other.gameObject.tag == "air") FindObjectOfType<Audio>().GetComponent<Audio>().Play("AirHit");
+        if (other.gameObject.tag == "earth") FindObjectOfType<Audio>().GetComponent<Audio>().Play("EarthHit");
+        if (other.gameObject.tag == "electric") FindObjectOfType<Audio>().GetComponent<Audio>().Play("ElectricHit");
+        if (other.gameObject.tag == "void") FindObjectOfType<Audio>().GetComponent<Audio>().Play("VoidHit");
+        if (other.gameObject.tag == "fire") FindObjectOfType<Audio>().GetComponent<Audio>().Play("FireHit");
+
+        Destroy(this.gameObject);
 	}
 }
